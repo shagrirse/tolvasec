@@ -1,0 +1,104 @@
+@import '../uc/var.scss';
+
+/* Location section styles */
+.location {
+    h1 {
+        font-family: $bodyFont;
+    }
+
+    .area-container {
+        background-color: #FFF;
+        min-height: 50vh;
+
+        img {
+            align-self: center;
+            width: 100px;
+            margin-top: 1em;
+        }
+
+        .info-location {
+            text-align: start;
+            margin-bottom: 2em;
+
+            >p {
+                margin: 0;
+            }
+        }
+
+        h3,
+        h4 {
+            color: $primaryColor;
+            text-transform: uppercase;
+            font-family: $secondaryFont;
+            text-align: start;
+        }
+
+        p.m-0 {
+            font-family: $secondaryFont;
+        }
+    }
+}
+
+.tiers {
+    h1 {
+        font-family: $bodyFont;
+    }
+    table {
+        margin: 0 auto;
+        width: 70%;
+        tbody tr {
+            transition: 0.2s ease-in;
+            &:hover {
+                border-right: 5px solid $primaryColor;
+            }
+        }
+    }
+    
+}
+
+.emergency {
+    border: 2px solid $primaryColor;
+    h1 {
+        font-family: $bodyFont;
+    }
+    h3 {
+        font-family: $specialFont;
+    }
+}
+
+.contact {
+    h1 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: $specialFont;
+        span {
+            color: $primaryColor;
+        }
+    }
+    small {
+        color: $primaryColor;
+    }
+}
+
+/* SVG animations for exclamation mark and geotag markers. Geotag markers have alternate and alternate reverse to have diversity/variety */
+.exclMark {
+    animation: updown 2s infinite;
+}
+
+#geotagwhite {
+    animation: geotags 2s infinite alternate;
+}
+#geotagblue {
+    animation: geotags 3s infinite alternate-reverse;
+}
+/* Animations for exclamation mark svg */
+@keyframes updown {
+    0% {transform: translateY(0px);}
+    20% {transform: translateY(-15px) scale(1.01);}
+    40% {transform: translateY(0px);}
+    60% {transform: translateY(-15px) scale(1.01);}
+}
+@keyframes geotags {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}

@@ -1,0 +1,78 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Sans+Pro&family=Raleway&display=swap");
+/* Jumbotron styles */
+.jumbotron {
+  background-color: #9524221f;
+}
+
+.jumbotron #slide2 {
+  display: none;
+}
+
+.jumbotron h1 {
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+}
+
+.jumbotron .lead {
+  font-size: 1em;
+}
+
+.jumbotron #score h1 {
+  font-family: "IBM Plex Mono", monospace;
+  color: #952422;
+}
+
+/* Apply animation to rocket */
+.jumbotron #rocket {
+  -webkit-transition: 6s cubic-bezier(0.64, 0.29, 0, 1.02);
+  transition: 6s cubic-bezier(0.64, 0.29, 0, 1.02);
+}
+
+/* Testimonial section styles */
+.testimonial {
+  min-height: 30vh;
+  padding: 2em;
+}
+
+.testimonial h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.testimonial .carousel-item img {
+  border-radius: 20%;
+  height: auto;
+}
+
+.testimonial .carousel-item cite {
+  font-weight: bold;
+}
+
+.testimonial .link {
+  -webkit-transition: 0.5s cubic-bezier(0.61, 0.44, 0.31, 1.12);
+  transition: 0.5s cubic-bezier(0.61, 0.44, 0.31, 1.12);
+  font-size: 1.5em;
+  padding: 0.3em;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid #952422;
+}
+
+.testimonial .link:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.testimonial .link:hover span {
+  color: white;
+}
+
+/* Contact form styles */
+.contact {
+  min-height: 60vh;
+}
+
+.contact .formHeading {
+  font-family: "IBM Plex Mono", monospace;
+}

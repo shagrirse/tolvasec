@@ -1,0 +1,259 @@
+@import 'uc/var.scss';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Sans+Pro&family=Raleway&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.red-text {
+    color: $primaryColor !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+label {
+    color: white;
+}
+
+.white {
+    background-color: rgb(244, 244, 244);
+    * {
+        color: black;
+    }
+    h1 {
+        font-family: $bodyFont;
+    }
+}
+
+.main-header {
+    font-family: $specialFont;
+    min-height: max-content;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+    background-color: rgb(244,244,244);
+}
+
+.logo {
+    height: 10em;
+}
+
+.nav-item {
+    padding: 0.5em 1em 0.5em 0;
+    font-weight: 300;
+    text-align: center;
+    min-width: 100px;
+
+    a {
+        color: $white;
+        font-size: 1.2em;
+    }
+}
+
+.fa-chevron-down {
+    margin-left: 0.3em;
+    font-size: 0.8em;
+}
+
+.dropdown-item {
+    color: black !important;
+    transition: 0.2s ease-in;
+    font-size: 0.9em;
+    padding: 0.6em;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.5;
+        color: $primaryColor;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+}
+
+.dropdown {
+    transition: 0.3s ease-in;
+}
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+
+    h4,
+    a {
+        font-size: 1em;
+
+        &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.63);
+        }
+    }
+
+    .btn,
+    #emailAddress {
+        border-radius: 0;
+        border: none;
+    }
+
+    .btn {
+        background-color: $primaryColor;
+
+        &:hover {
+            background-color: $primaryFaded;
+        }
+    }
+
+    #emailAddress {
+        background-color: rgba(255, 255, 255, 0.747);
+        width: 100%;
+
+        &:focus {
+            background-color: $white;
+        }
+    }
+
+    ul li a {
+        font-size: 0.9em;
+    }
+
+    .copyright {
+        font-size: 0.6em;
+    }
+}
+
+.fa-bars {
+    font-size: 1.75em;
+    color: white;
+}
+
+html::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+html::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 50px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+html::-webkit-scrollbar-track {
+    background: #b9b9b970;
+    border-radius: 50px;
+}
+
+@keyframes rotateGradient {
+    0% {
+        background-position: 62% 0%
+    }
+
+    50% {
+        background-position: 40% 100%
+    }
+
+    100% {
+        background-position: 62% 0%
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    font-family: FontAwesome;
+    content: '\f054';
+    font-size: 2em;
+    color: $primaryColor;
+}
+
+.carousel-control-prev-icon:after {
+    font-family: FontAwesome;
+    content: '\f053';
+    font-size: 2em;
+    color: $primaryColor;
+}
+
+.carousel-item p {
+    margin: auto;
+}
+.summary {
+    background: linear-gradient(90deg, #000000, #971d1b);
+    background-size: 300% 300%;
+    animation: rotateGradient 4s ease infinite;
+}
+
+[class*="transition"] {
+    padding: 0;
+    height: 20vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../assets/office.jpg);
+    h1 {
+        font-family: $specialFont;
+        font-size: 6vw;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20vh;  
+    }
+}
+.container-fluid.white {
+    padding: 3em 0;
+    .contact {
+        border-radius: 1em;
+        background-color: #FFF;
+        .form-group {
+            margin-bottom: 3em;
+                label {
+                font-family: $specialFont;
+                color: $primaryColor;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .inputBox {
+                margin-bottom: 2em;
+            }
+            input, select {
+                border-radius: 0;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                &:focus {
+                    border-radius: 5px 5px 0 0;
+                    color: #495057;
+                    border-color: $primaryColor;
+                    outline: 0;
+                    box-shadow: 0 0 0 0.2rem rgba($primaryColor, 0.25);
+                }
+            }
+        }
+    }
+}

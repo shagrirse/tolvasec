@@ -1,0 +1,7 @@
+In this folder, all SVG items are stored.
+This is to minimize the size of the graphics for the page, and make it so that the indivudal SVG components can be edited.
+
+original no edits mean that the svg file has not been touched since download (from undraw.co)
+edited with figma means that I have done some edits to the SVG in order to make it fit the content of the page (figma is an open source design tool)
+
+Cheers
